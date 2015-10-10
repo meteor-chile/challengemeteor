@@ -16,13 +16,3 @@ Meteor.methods({
     };
   }
 });
-
-
-validateChallenge = function (challenge) {
-  var errors = {};
-  if (!challenge.title)
-    errors.title = "Please fill in a title";
-  if (!challenge.description)
-    errors.description =  "Please fill in a description";
-  return errors;
-}
