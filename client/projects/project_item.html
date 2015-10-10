@@ -1,0 +1,10 @@
+<template name="projectItem">
+  <p>proyect!</p>
+  {{#if Template.subscriptionsReady}}
+    {{#with project}}
+      <h3>{{title}}</h3>
+    {{/with}}
+  {{else}}
+      <p>Loading...</p>
+  {{/if}}
+</template>
