@@ -41,3 +41,43 @@ Home page
     }
   }
 }
+/* ----------------------------------------------------
+Vote
+----------------------------------------------------- */
+.list-vote {
+    position: relative;
+    top: -33px;
+    display: block;
+    width: 55px;
+    text-align: center;
+    font-size: 37px;
+}
+
+.list-vote a {
+    color:#777;
+    display: block;
+}
+
+.list-vote a:hover {
+  text-decoration: none;
+}
+
+.like-plus {
+      border: 1px solid #999;
+}
+
+.like-plus:hover {
+  color: #1565C0;
+}
+
+.like-minus:hover {
+  color:#B71C1C;
+}
+
+.likes-count {
+      line-height: 0.6;
+}
+
+.small {
+  font-size:40%;
+}
