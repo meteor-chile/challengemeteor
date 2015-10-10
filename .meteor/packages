@@ -30,3 +30,4 @@ ejson
 spacebars
 check
 arillo:flow-router-helpers
+momentjs:moment
