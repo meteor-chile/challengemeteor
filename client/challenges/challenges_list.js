@@ -4,6 +4,7 @@ Template.challengesList.onCreated(function () {
     self.subscribe('challenges');
   });
 });
+
 Template.challengesList.helpers({
   challengesList: function () {
     return Challenge.find({ });
