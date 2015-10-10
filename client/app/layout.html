@@ -1,7 +1,9 @@
 <template name="mainLayout">
   {{> Template.dynamic template=header}}
   <main>
-    {{>Template.dynamic template=content}}
+    <div class="container">
+      {{>Template.dynamic template=content}}
+    </div>
   </main>
   <footer>We love Meteor</footer>
 </template>

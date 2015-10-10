@@ -1,5 +1,33 @@
 <template name="challengeNew">
-  <form class="main form page">
-    adsdasd
-  </form>
+  <div id="ChallengeNew">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Title</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="title" placeholder="Title">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" rows="3" name="description" placeholder="Description"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Tags</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="tags" placeholder="Tags">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Create Challenge</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </template>
