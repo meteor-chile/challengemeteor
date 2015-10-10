@@ -9,3 +9,7 @@ autopublish
 insecure
 kadira:flow-router
 kadira:blaze-layout
+accounts-base
+accounts-password
+accounts-ui
+twbs:bootstrap
