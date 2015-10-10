@@ -13,3 +13,4 @@ twbs:bootstrap
 useraccounts:flow-routing
 useraccounts:bootstrap
 accounts-ui
+fourseven:scss
