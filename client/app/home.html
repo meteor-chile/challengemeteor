@@ -1,7 +1,10 @@
 <template name="home">
-  <p>Our Challenges</p>
-  {{> challengesList}}
-  <p>
-    <a href="/hello-world">See Hello World Post</a>
-  </p>
+  <div class="container" id="Home">
+    <div class="row">
+      <div class="button-container col-md-offset-4 col-md-4">
+	<button type="button" class="btn btn-primary btn-lg btn-block">Create new challenge!</button>
+      </div>
+    </div>
+    {{> challengesList}}
+  </div>
 </template>
