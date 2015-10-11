@@ -1,5 +1,54 @@
 <template name="challengeItem">
   <div id="ChallengeItem">
-    show single challenge
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h4 class="panel-title">Projects</h4>
+          </div>
+          <div class="panel-body">
+            <ul class="media-list user-list">
+              {{#if Template.subscriptionsReady}}
+              {{#with challenge}}
+              <li class="media">
+                <div class="media-left">
+                  <a href={{projectPath}}>
+                    <img class="media-object img-circle" src="../images/meteor-logo.png" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <div class="challenge-title">
+                    <a href="">User Name & LastName</a>
+                    <small>
+                      <i class="glyphicon glyphicon-time"></i>
+                      <label>
+                        {{fromNow createdAt}}
+                      </label>
+                      ({{inCalendar createdAt}})
+                    </small>
+                  </div>
+                  <h4 class="date">{{title}}</h4>
+                  <p>
+                    {{description}}
+                  </p>
+                  {{#each tags}}
+                    <span class="label label-primary">{{this}}</span>
+                  {{/each}}
+                </div>
+              </li>
+              {{/with}}
+              {{else}}
+                Loading ...
+              {{/if}}
+            </ul>
+          </div>
+        </div><!-- panel -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="button-container col-md-offset-4 col-md-4">
+        <a href="/challenges/new" type="button" class="btn btn-primary btn-lg btn-block">Create new project!</a>
+      </div>
+    </div>
   </div>
 </template>

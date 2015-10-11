@@ -3,6 +3,35 @@
 // ====================================================
 
 // ====================================================
+// GENERAL STYLES
+// ====================================================
+
+.bootstrap-tagsinput {
+	width: 100%;
+}
+
+.tt-menu {
+    position: absolute;
+    top: 100%;
+    left: -7px !important;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 7px 5px;
+    margin: 4px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+// ====================================================
 // APP PAGES
 // ====================================================
 
@@ -10,74 +39,74 @@
 Home page
 ----------------------------------------------------- */
 .button-container {
-  padding: 0 0 20px;
+	padding: 0 0 20px;
 }
 .panel {
-  .panel-body {
-    .media, .media-body {
-      overflow: visible !important;
-    }
-    .media-list {
-      img {
-	width: 60px;
-	height: 60px;
-	border: 1px solid;
-      }
-      .media-body {
-	overflow: visible !important;
-	padding: 10px;
-	background: #fdfdfd;
-	border-top: 1px solid #ededed;
-	-moz-box-shadow: 0 1px 1px rgba(0,0,0,.1);
-	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
-	box-shadow: 0 1px 1px rgba(0,0,0,.1);
-	.challenge-title {
-	  small i {
-	    padding-right: 3px;
-	    padding-left: 10px;
-	  }
+	.panel-body {
+		.media, .media-body {
+			overflow: visible !important;
+		}
+		.media-list {
+			img {
+				width: 60px;
+				height: 60px;
+				border: 1px solid;
+			}
+			.media-body {
+				overflow: visible !important;
+				padding: 10px;
+				background: #fdfdfd;
+				border-top: 1px solid #ededed;
+				-moz-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+				-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+				box-shadow: 0 1px 1px rgba(0,0,0,.1);
+				.challenge-title {
+					small i {
+						padding-right: 3px;
+						padding-left: 10px;
+					}
+				}
+			}
+		}
 	}
-      }
-    }
-  }
 }
 /* ----------------------------------------------------
 Vote
 ----------------------------------------------------- */
 .list-vote {
-    position: relative;
-    top: -33px;
-    display: block;
-    width: 55px;
-    text-align: center;
-    font-size: 37px;
+	position: relative;
+	top: -33px;
+	display: block;
+	width: 55px;
+	text-align: center;
+	font-size: 37px;
 }
 
 .list-vote a {
-    color:#777;
-    display: block;
+	color:#777;
+	display: block;
 }
 
 .list-vote a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .like-plus {
-      border: 1px solid #999;
+	border: 1px solid #999;
 }
 
 .like-plus:hover {
-  color: #1565C0;
+	color: #1565C0;
 }
 
 .like-minus:hover {
-  color:#B71C1C;
+	color:#B71C1C;
 }
 
 .likes-count {
-      line-height: 0.6;
+	line-height: 0.6;
 }
 
 .small {
-  font-size:40%;
+	font-size:40%;
 }

@@ -11,7 +11,6 @@ Template.challengesList.helpers({
   }
 });
 
-
 Template.challengesList.events({
   'click .like-plus': function(event) {
     console.log('plus');

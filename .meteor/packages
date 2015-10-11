@@ -31,3 +31,5 @@ spacebars
 check
 arillo:flow-router-helpers
 momentjs:moment
+ajduke:bootstrap-tagsinput
+sergeyt:typeahead
