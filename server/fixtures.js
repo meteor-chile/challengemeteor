@@ -2,7 +2,7 @@ Meteor.startup(function() {
     var pedro;
     var felipe;
     var challenges = [];
-    var users = [];
+    var usersId = [];
 
    if (Meteor.users.find().count() === 0) {
 
@@ -20,7 +20,7 @@ Meteor.startup(function() {
         username: userData.email
       });
 
-      users.push(userId);
+      usersId.push(userId);
 
       Meteor.users.update({_id:userId}, {$set:{'emails.0.verified':true, profile:{
           firstname: userData.firstname,
@@ -43,10 +43,16 @@ Meteor.startup(function() {
     var tags = ['users', 'seo', 'frontend', 'server', 'router', 'history', 'analytics'];
     var likes = [0, 10, 100, 20, 30, 5, 24, 33, 87];
     for (var i = 0; i<101; i++) {
+      var userId = _.sample(usersId);
+      var admin = Meteor.users.findOne({_id:userId});
+
       var cId = Challenge.insert ({
             title: Fake.word(),
             description: Fake.paragraph(5),
-            userId: _.sample(users),
+            userId: admin._id,
+            administrator : {
+              name : admin.profile.name
+            },
             tags: [
               _.sample(tags)
             ],
@@ -65,11 +71,17 @@ Meteor.startup(function() {
     var users = [pedro, felipe];
     var likes = [0, 10, 100, 20, 30, 5, 24, 33, 87];
     for (var i = 0; i<101; i++) {
+      var userId = _.sample(usersId);
+      var admin = Meteor.users.findOne({_id:userId});
+
       Project.insert ({
             title: Fake.word(),
             description: Fake.paragraph(5),
             challengeId: _.sample(challenges),
-            userId: _.sample(users),
+            userId: admin._id,
+            administrator : {
+              name : admin.profile.name
+            },
             tags: [
               _.sample(tags)
             ],
