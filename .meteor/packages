@@ -7,7 +7,6 @@
 kadira:flow-router
 kadira:blaze-layout
 accounts-base
-accounts-password
 twbs:bootstrap
 useraccounts:flow-routing
 useraccounts:bootstrap
@@ -33,3 +32,5 @@ arillo:flow-router-helpers
 momentjs:moment
 ajduke:bootstrap-tagsinput
 sergeyt:typeahead
+accounts-meteor-developer
+accounts-password
