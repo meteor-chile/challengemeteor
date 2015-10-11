@@ -3,6 +3,10 @@ Meteor.publish('challenges', function() {
   return this.ready();
 });
 
+Meteor.publish('challenge', function(challengeId) {
+  return Challenge.find({ _id: challengeId });
+  return this.ready();
+});
 
 Meteor.publish('projects', function() {
   return Project.find();
